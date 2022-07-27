@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UF-8">
+        <title> Funções nativas </title>
+        <!--JAVASCRIPT-->
+        <script>
+           
+            //Variável
+            var termo = "Proway";
+
+            //Comprimento
+            document.write("A palavra tem " + termo.length + " letras.\n");
+            
+            //Maiúscula e minúscula
+            document.write(" A palavra em maiúscula: "+ termo.toUpperCase()+ "\n");
+           
+            document.write(" A palavra em minúscula: "+ termo.toLowerCase());
+
+
+            //Localizar elementos
+            // retornar a primeira letra E
+            document.write(termo.indexOf("e")); // imprime -1(não existe)
+
+            // retornar a última posição que determinada letra aparece
+            document.write(termo.lastIndexOf("o"));
+
+
+            //FATIAMENTO
+            //Fatia o elemento a partir de determinada posição
+            document.write(termo.slice(2));
+
+            //fatiamento segundo intervalo
+            document.write(termo.slice(2,5));
+
+
+            //ARREDONDAR VALORES
+            var nota = 7.89;
+            document.write(Math.round(nota));//exibe 8
+
+            //Mínimo e Máximo
+            document.write(Math.min(-10,8,6,9));//imprime -10
+            document.write(Math.max(9,6,4));//imprime 9
+
+
+            //Imprime NÚMERO ALEATÓRIO
+            document.write(Math.random());//imprime número real ente zero e um
+            var numero = Math.random() * 100;
+            var dez = Math.random() * 10;
+            document.write("****");
+            document.write(Math.round(numero));//numero de 0 a 100
+            document.write("****");
+            document.write(Math.round(dez));//numero de 0 a 10        
+
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
