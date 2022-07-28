@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estrutura Base - JQuery</title>
+        <!--Importar JQuery9(biblioteca)-->
+        <script src="jquery-3.6.0.min.js"></script>
+
+        <!--Script-->
+        <script>
+            //Ao carregar o documento
+            //validação:carregamento do documento via $(document).ready(function(){}
+            $(document).ready(function(){
+                //TRABALHANDO COM SELETORES NO JQUERY
+
+                //Variáveis
+                //pegando pela tag
+                var campo = $("input").val();//val=valor do input--significa que quer manipular a tag input e quer o val, que em Jquery, refere-se ao crrespondete value no JS
+                //pegando pelo id
+                var titulo = $("#titulo").html(); //do mesmo jeito/papel que no innerHtnl no js
+                //pegando pela classe
+                var subtitulo = $(".subtitulo").html();
+
+                //exibir
+                alert(campo);
+                alert(titulo);
+                alert(subtitulo);
+                
+            });
+
+        </script>
+    </head>
+    <body>
+        <!--criacao de elementos-->
+        <input type="text" value ="Campo Nome">
+        <h1 id="titulo"> Título em H1 </h1>
+        <h2 class="subtitulo"> Título em H2</h2>
+    </body>
+</html>

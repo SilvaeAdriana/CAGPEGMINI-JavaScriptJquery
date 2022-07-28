@@ -1,0 +1,1 @@
+Os conteúdos de JQuery, aqui, abordam os pontos JS sendo aplicados em JQuery, as adaptações no uso da biblioteca.
