@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=""UTF-8>
+        <title>Seletor HTML</title>
+
+        <!--JAVASCRIPT-->
+
+        <!--
+            dado 3 h2, passa-se a uma variável o h2 a ser ali alocado
+            a função dá alerta com essa variável
+
+        -->
+        <script>
+            // Criar a função 
+            function acao(){
+                //Vari[avel]
+                var texto = document.getElementsByTagName("h2")[0];     //"h2" é a tag
+                
+
+                //Exibir o conteúdo do h2
+                alert(texto.innerHTML);//pega o texto dentro do h2 selecionado,existem outras características que podem ser 'pegas'
+            }
+        </script>
+
+    </head>
+    <body>
+        <button onclick="acao()">Selecionar</button>
+        <h1> Aplicando Seletores</h1>
+        <h2>Proway</h2>
+        <h2>Seletores JS</h2>
+        <h2>Curso Proway</h2>
+        
+    </body>
+
+
+
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=""UTF-8>
+        <title>Seletor ID</title>
+
+        <!--JAVASCRIPT-->
+        <script>
+            // Criar a função mensagem
+            function exibirConteudo(){
+               
+                //Obter dados do id CAMPO
+                var campo = document.getElementById("campo");
+
+                //Exibir o conteúdo
+                alert(campo.value);//value pois é tag de formulário, por isso não usa innerHtml
+
+                //Apagar o conteúdo após a exibição
+                campo.value = "";
+            }
+        </script>
+
+
+    </head>
+    <body>
+        <input type="text" id="campo">
+        <button onclick="exibirConteudo()">Clique aqui</button>
+        
+    </body>
+
+
+
+
+</html>

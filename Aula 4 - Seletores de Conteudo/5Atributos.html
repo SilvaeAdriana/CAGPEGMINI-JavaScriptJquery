@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=""UTF-8>
+        <title> Atributos </title>
+
+        <!--JAVASCRIPT-->
+        <!--Há um link inicial, caso o usuário queira mudar o link, aperta o botão-->
+        <script>
+            //Função
+            function  alterarLink(){
+                
+                //Obter o link
+                var link = document.getElementsByTagName("a")[0];
+
+                //Alterar o link
+                link.href = "http://www.google.com.br";
+            }
+           
+           
+        </script>
+
+
+    </head>
+
+    <body>
+        <a href="https://www.proway.com.br"> Clique aqui </a>
+        <button onclick="alterarLink()">Alterar link</button>
+     
+        
+        
+    </body>
+
+
+
+
+</html>
